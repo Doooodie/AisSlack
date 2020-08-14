@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" , user-scalable="no" , maximum-scale="1" />
-        <title>Slack</title>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <title>Slack &vert; general &vert; Ais</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style/style.css" />
         <script src="https://kit.fontawesome.com/27affdde6a.js" crossorigin="anonymous"></script>
     </head>
@@ -16,7 +16,7 @@
                 </button>
             </nav>
             <nav class="search-block">
-                <input placeholder="Search Slack" type="text">
+                <input placeholder="Search Slack" type="text" />
                 <i class="fas fa-search fa-sm"></i>
             </nav>
             <nav class="help-block">
@@ -27,8 +27,131 @@
         </header>
 
         <main>
-            <aside>
-                
+            <aside class="left-menu">
+                <div class="left-menu-title">
+                    <div class="text-block">
+                        <div class="text-block-title">
+                            <span class="channel-name">Ais</span>
+                            <i class="fas fa-chevron-down fa-xs"></i>
+                        </div>
+                        <div class="text-block-username">
+                            <div class="online-status"></div>
+                            <span class="username">Kostya Yurkevich</span>
+                        </div>
+                    </div>
+                    <button>
+                        <i class="far fa-edit"></i>
+                    </button>
+                </div>
+                <div class="left-menu-links">
+                    <div class="links threads">
+                        <i class="far fa-comment-dots"></i>
+                        <span>Threads</span>
+                    </div>
+                    <div class="links mentions">
+                        <i class="fas fa-at"></i>
+                        <span>Mentions &amp; reactions</span>
+                    </div>
+                    <div class="links show-more">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Show more</span>
+                    </div>
+                </div>
+                <div class="left-menu-channels">
+                    <div class="title-container">
+                        <div class="channels-title">
+                            <i class="fas fa-caret-down"></i>
+                            <span>Channels</span>
+                        </div>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="channels-list">
+                        <div class="channel selected">
+                            <i class="fas fa-hashtag fa-xs"></i>
+                            <span>general</span>
+                        </div>
+                        <div class="channel">
+                            <i class="fas fa-hashtag fa-xs"></i>
+                            <span>questions</span>
+                        </div>
+                        <div class="channel">
+                            <i class="fas fa-hashtag fa-xs"></i>
+                            <span>random</span>
+                        </div>
+                        <div class="channel">
+                            <i class="fas fa-hashtag fa-xs"></i>
+                            <span>task1</span>
+                        </div>
+                        <div class="channel">
+                            <i class="fas fa-lock fa-xs"></i>
+                            <span>task2</span>
+                        </div>
+                        <div class="channel new-channel">
+                            <div class="list-item-container">
+                                <i class="fas fa-plus fa-xs"></i>
+                                <span>Add a channel</span>
+                            </div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-menu-messages">
+                    <div class="title-container">
+                        <div class="messages-title">
+                            <i class="fas fa-caret-down"></i>
+                            <span>Direct messages</span>
+                        </div>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="messages-list">
+                        <div class="msg-destination">
+                            <div class="list-item-container">
+                                <i class="fas fa-heart fa-xs"></i>
+                                <span>Slackbot</span>
+                            </div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="msg-destination">
+                            <div class="list-item-container">
+                                <div class="online-status"></div>
+                                <span>Kostya Yurkevich</span>
+                                <span class="yourself">&lpar;you&rpar;</span>
+                            </div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="msg-destination">
+                            <div class="list-item-container">
+                                <i class="fas fa-plus fa-xs"></i>
+                                <span>Invite people</span>
+                            </div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-menu-apps">
+                    <div class="title-container">
+                        <div class="apps-title">
+                            <i class="fas fa-caret-down"></i>
+                            <span>Apps</span>
+                        </div>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="apps-list">
+                        <div class="app">
+                            <div class="list-item-container">
+                                <div class="online-status"></div>
+                                <span>GitHub</span>
+                            </div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
             </aside>
         </main>
     </body>

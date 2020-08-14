@@ -1,15 +1,15 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
 }
 
 header {
     display: flex;
     height: 38px;
-    background: #F8F8FA;
+    background: #f8f8fa;
     color: #6e767e;
     align-items: center;
-    border-bottom: solid #F8F8FA 1px;
+    border-bottom: solid #ebebed 1px;
 }
 
 .search-block {
@@ -17,14 +17,14 @@ header {
     max-width: 500px;
     background: #ebebed;
     border-radius: 5px;
-    border: solid #E1E2E5 1px;
+    border: solid #e1e2e5 1px;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
 .search-block:hover {
-    border-color: #989CA0;
+    border-color: #989ca0;
 }
 
 .search-block > input {
@@ -59,7 +59,8 @@ header {
     flex: 1;
 }
 
-.history-block, .help-block {
+.history-block,
+.help-block {
     text-align: right;
 }
 
@@ -75,11 +76,218 @@ header button {
 
 header button:hover {
     cursor: pointer;
-    background-color: #E2E3E5;
-    color: #383F45;
+    background-color: #e2e3e5;
+    color: #383f45;
     border-radius: 4px;
 }
 
-header button:focus {
+button:focus {
     outline: none;
+}
+
+.left-menu {
+    width: 260px;
+    height: 95.8vh;
+    background: #f8f8fa;
+}
+
+.left-menu {
+    border-right: solid #ebebed 1px;
+    font-size: 15px;
+}
+
+.left-menu-title {
+    height: 64px;
+    padding: 0px 16px;
+    border-bottom: solid #ebebed 1px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-menu-title * {
+    cursor: pointer;
+}
+
+.left-menu-title:hover {
+    background-color: white;
+}
+
+.left-menu-title > .text-block {
+    flex: 80%;
+}
+
+.text-block-title {
+    color: #383f45;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.text-block-title > .channel-name {
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.text-block-username {
+    display: flex;
+    align-items: baseline;
+}
+
+.online-status {
+    height: 9px;
+    width: 9px;
+    margin-right: 5px;
+    background-color: #60d156;
+    border-radius: 10px;
+}
+
+.text-block-username > .username {
+    font-size: smaller;
+    color: #383f45;
+    opacity: 0.8;
+}
+
+.left-menu-title > button {
+    width: 36px;
+    height: 36px;
+    background-color: #383f45;
+    border: none;
+    border-radius: 36px;
+    text-align: center;
+}
+
+.left-menu-title > button > i {
+    color: #f8f8fa;
+    margin-left: 3px;
+}
+
+.left-menu-title > button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.left-menu-links {
+    padding: 12px 16px;
+    color: rgb(123, 128, 132);
+    border-bottom: solid #ebebed 1px;
+}
+
+.links {
+    line-height: 30px;
+}
+
+.links:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.links i {
+    margin-right: 5px;
+}
+
+.links.show-more i {
+    margin-right: 7px;
+}
+
+.links.show-more:hover {
+    color: #383f45;
+    background-color: inherit;
+}
+
+.left-menu .title-container {
+    color: rgb(123, 128, 132);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+}
+
+.channels-title,
+.messages-title,
+.apps-title {
+    flex: 80%;
+}
+
+.channels-title i,
+.messages-title i,
+.apps-title i {
+    margin-right: 10px;
+}
+
+.title-container * {
+    cursor: pointer;
+}
+
+.title-container button {
+    align-items: center;
+    border: none;
+    background-color: inherit;
+    color: #6e767e;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.title-container button:hover {
+    background-color: #e2e3e5;
+    border-radius: 4px;
+}
+
+.channels-list .channel,
+.messages-list .msg-destination,
+.apps-list .app {
+    padding: 5px 20px;
+    color: rgb(123, 128, 132);
+    display: flex;
+    align-items: center;
+}
+
+.channel.selected {
+    color: white;
+    background-color: rgb(45, 158, 224);
+}
+
+.channels-list .channel:hover {
+    cursor: pointer;
+}
+
+.channels-list .channel:hover:not(.selected),
+.messages-list .msg-destination:hover,
+.apps-list .app:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.channel i,
+.msg-destination i,
+.app i {
+    font-size: 0.6rem;
+    margin-right: 5px;
+}
+
+.list-item-container {
+    flex: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.channel .fa-times,
+.msg-destination .fa-times,
+.app .fa-times {
+    font-size: initial;
+    opacity: 0;
+    margin: 0;
+    flex: 4%;
+}
+
+.fa-times:hover {
+    opacity: 0.8;
+}
+
+.msg-destination .fa-heart {
+    color: #60d156;
+}
+
+.msg-destination .yourself {
+    margin-left: 8px;
+    opacity: 0.7;
 }
