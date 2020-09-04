@@ -67,6 +67,20 @@ button {
         display: none;
     }
 
+    main .channel-header > i {
+        display: initial;
+        margin-right: 9px;
+        padding: 8px;
+        color: rgba(29, 28, 29, 0.7);
+    }
+
+    
+    main .channel-header > i:hover {
+        cursor: pointer;
+        background-color: rgba(29, 28, 29, 0.04);
+        border-radius: 4px;
+    }
+
     main .channel-details > div {
         display: flex;
     }
@@ -76,7 +90,7 @@ button {
     }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 360px) {
     header .search-block > input {
         flex: 5;
     }
@@ -392,6 +406,10 @@ article.chat {
     border-bottom: solid #ebebed 1px;
     display: flex;
     align-items: center;
+}
+
+.channel-header > i {
+    display: none;
 }
 
 .channel-header .chat-name {
